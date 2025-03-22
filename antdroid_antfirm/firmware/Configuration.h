@@ -25,29 +25,29 @@
 // ****************************************************************************
 // PIN NUMBERS
 // In arduino Mega using 12 to 23 motors will disable PWM on pins 11 and 12.
-#define LeftFrontCoxaPin 52
-#define LeftFrontFemurPin 53
-#define LeftFrontTibiaPin 51
+#define LeftFrontCoxaPin 23
+#define LeftFrontFemurPin 25
+#define LeftFrontTibiaPin 27
 
-#define RightFrontCoxaPin 49
-#define RightFrontFemurPin 48
-#define RightFrontTibiaPin 47
+#define RightFrontCoxaPin 22
+#define RightFrontFemurPin 24
+#define RightFrontTibiaPin 26
 
-#define LeftMiddleCoxaPin 46
-#define LeftMiddleFemurPin 45
-#define LeftMiddleTibiaPin 44
+#define LeftMiddleCoxaPin 29
+#define LeftMiddleFemurPin 31
+#define LeftMiddleTibiaPin 35
 
-#define RightMiddleCoxaPin 43
-#define RightMiddleFemurPin 42
-#define RightMiddleTibiaPin 41
+#define RightMiddleCoxaPin 28
+#define RightMiddleFemurPin 30
+#define RightMiddleTibiaPin 34
 
-#define LeftRearCoxaPin 40
+#define LeftRearCoxaPin 37
 #define LeftRearFemurPin 39
-#define LeftRearTibiaPin 38
+#define LeftRearTibiaPin 41
 
-#define RightRearCoxaPin 37
-#define RightRearFemurPin 36
-#define RightRearTibiaPin 35
+#define RightRearCoxaPin 26
+#define RightRearFemurPin 38
+#define RightRearTibiaPin 40
 
 // ****************************************************************************
 // MIN & MAX ANGLES
