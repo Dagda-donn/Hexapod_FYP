@@ -156,3 +156,6 @@
 #define FootDistanceStep 10
 #define SpeedStep 10
 #define FloorHeightStep 10
+
+//Define analog pins for soil moisture sensors
+#define SoilMoistureSensor A0
