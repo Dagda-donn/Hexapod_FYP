@@ -22,10 +22,8 @@
 
 #include <ArduinoHardware.h>
 #include "ros.h"
-
 #include "hexapod.h"
-#include "Arduino.h"
-
+#include "Sensors.h"  // Include the sensors header file here
 
 #include <antdroid_msgs/Walk.h>
 #include <antdroid_msgs/Balance.h>
@@ -38,7 +36,7 @@
 #include <antdroid_msgs/Gait.h>
 #include <antdroid_msgs/MoveLeg.h>
 #include <std_msgs/Bool.h>
-
+#include <std_msgs/String.h>  // Include for receiving the "READ_SENSOR" command
 
 extern ros::NodeHandle arduino;
 extern Hexapod Antdroid;
@@ -56,15 +54,19 @@ void ControlMoveLeg(const antdroid_msgs::MoveLeg& msg);
 void ControlAttack(const std_msgs::Bool& msg);
 void ControlSayHello(const std_msgs::Bool& msg);
 
+// New function to handle the "READ_SENSOR" command
+void ControlReadSensorCommand(const std_msgs::String& msg);
+
 class Control
 {
     public:
     Control(Hexapod* Antdroid);
-    
+
     void Start(void);
-
     void ReadInput(void);
-
+    void ReadSensorData(void);  // Call the function to read sensor data
 };
+
+extern ros::Subscriber<std_msgs::String> read_sensor_subscriber;
 
 #endif
